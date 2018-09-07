@@ -5,7 +5,7 @@
  */
 package cosc310_test;
 
-import edu.frostburg.cosc310.lab00.KennedySteveLab00;
+import edu.frostburg.cosc310.lab00.ForeJohnLab00;
 
 /**
  *
@@ -18,9 +18,10 @@ public class COSC310_Test {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        KennedySteveLab00 lab = new KennedySteveLab00();
-        System.out.println(lab.problem0(9999));
-        System.out.println(lab.problem1(9999));
+        ForeJohnLab00 lab = new ForeJohnLab00();
+        System.out.println("Problem #0 : " + lab.problem0(9999));
+        System.out.println("Problem #1 : " + lab.problem1(9999));
+        System.out.println("Problem #2 : ArrayList - " + lab.problem2(9999999) + " LinkedList - " + lab.problem22(9999999));
     }
     
 }
