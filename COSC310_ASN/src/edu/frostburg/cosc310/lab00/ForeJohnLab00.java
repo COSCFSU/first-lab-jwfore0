@@ -53,13 +53,37 @@ public class ForeJohnLab00 implements Lab00{
 
     
     public long problem2(int size) {
-       ArrayList arrayList = new ArrayList();
+       
+        ArrayList arrayList = new ArrayList();
+ 
+       //Start of ArrayList time
+       long start0 = System.currentTimeMillis();
+       for(int i = 0; i < size; i++){
+           arrayList.add(i);
+       }
+       long end0 = System.currentTimeMillis();
+       long arrayTime0 = end0 - start0;
+       //End of ArrayList time 
+       
+       return arrayTime0;
+       
+    }
+    
+    public long problem22(int size) {
+       
        LinkedList linkedList = new LinkedList();
-       long start = System.currentTimeMillis();
        
+       //Start of LinkedList time
+       long start1 = System.currentTimeMillis();
+       for(int i = 0; i < size; i++){
+           linkedList.add(i);
+       }
+       long end1 = System.currentTimeMillis();
+       long linkedTime1 = end1 - start1;
+       // End of LinkedList time
        
-       long end = System.currentTimeMillis();
-       return end - start;
+       return linkedTime1;
+       
     }
     
 }
